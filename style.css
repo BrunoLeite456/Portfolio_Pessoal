@@ -624,3 +624,130 @@ nav{
 
 
 }
+
+/* ==========================
+   RESPONSIVIDADE CELULAR
+========================== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header{
+        padding: 15px 20px;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    /* Hero */
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 35px;
+        padding: 120px 20px 80px;
+    }
+
+    .hero-text{
+        max-width: 100%;
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+
+    .hero h3{
+        font-size: 20px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero img{
+        width: 220px;
+        max-width: 80%;
+    }
+
+    /* Botões */
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .btn,
+    .btn2{
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* Seções */
+    section{
+        padding: 80px 20px;
+    }
+
+    section h2{
+        font-size: 34px;
+    }
+
+    /* Sobre */
+    #sobre p{
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.8;
+    }
+
+    /* Tecnologias */
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card{
+        padding: 25px;
+    }
+
+    /* Projetos */
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .projeto img{
+        height: 200px;
+    }
+
+    /* Modal */
+    .modal-content{
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    /* Contato */
+    .social{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social a{
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    /* Rodapé */
+    footer{
+        padding: 25px;
+        font-size: 14px;
+    }
+
+}
