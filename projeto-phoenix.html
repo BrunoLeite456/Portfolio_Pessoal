@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Phoenix · Bruno Ricardo Leite</title>
+  <meta name="description" content="Detalhes do Projeto Phoenix: conceito, objetivo, arquitetura e roadmap." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <canvas id="circuit-canvas"></canvas>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a href="index.html" class="logo">BR<span class="dot">.</span>dev</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="formacao.html">Formação</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="timeline.html">Linha do Tempo</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="phoenix-hero">
+    <div class="container">
+      <a href="projetos.html" class="chip" style="width:fit-content"><span class="pip"></span>← Voltar para Projetos</a>
+      <span class="star-badge">⭐ Projeto Principal</span>
+      <h1 style="font-size:clamp(2rem,4.5vw,3.2rem); margin:6px 0 8px;">Projeto Phoenix</h1>
+      <p class="lead">Mais do que um software: uma filosofia de evolução construída um dia de cada vez.</p>
+      <span class="badge-status" style="width:fit-content">🚧 Em fase de conceito e planejamento</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="phoenix-grid">
+
+        <div class="glass-card info-card reveal">
+          <h3>Conceito</h3>
+          <p style="color:var(--text-secondary)">
+            O Phoenix nasceu como um compromisso pessoal, baseado na ideia de que pequenas ações
+            realizadas diariamente constroem grandes resultados — assim como uma fênix, que se
+            reconstrói a cada ciclo.
+          </p>
+        </div>
+
+        <div class="glass-card info-card reveal">
+          <h3>Problema que busca resolver</h3>
+          <p style="color:var(--text-secondary)">
+            Estudos, metas, hábitos e projetos pessoais costumam ficar espalhados entre vários
+            apps e cadernos, dificultando enxergar a evolução real ao longo do tempo.
+          </p>
+        </div>
+
+        <div class="glass-card info-card reveal">
+          <h3>Objetivo</h3>
+          <p style="color:var(--text-secondary)">
+            Criar uma plataforma única capaz de reunir organização de estudos, metas, hábitos e
+            projetos — tornando visível o progresso diário e reforçando a constância.
+          </p>
+        </div>
+
+        <div class="glass-card info-card reveal">
+          <h3>Arquitetura (planejada)</h3>
+          <p style="color:var(--text-secondary)">
+            Back-end em Node.js e Express, expondo uma API REST consumida por um front-end em
+            React, com persistência de dados em PostgreSQL.
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card info-card reveal" style="margin-top:24px">
+        <h3>Funcionalidades planejadas</h3>
+        <div class="feature-chip-grid" style="margin-top:14px">
+          <span class="chip"><span class="pip"></span>Gestão de metas e hábitos</span>
+          <span class="chip"><span class="pip"></span>Organização de estudos</span>
+          <span class="chip"><span class="pip"></span>Acompanhamento de progresso</span>
+          <span class="chip"><span class="pip"></span>Painel de evolução pessoal</span>
+        </div>
+      </div>
+
+      <div class="glass-card info-card reveal" style="margin-top:24px">
+        <h3>Tecnologias</h3>
+        <div class="feature-chip-grid" style="margin-top:14px">
+          <span class="chip"><span class="pip"></span>Node.js</span>
+          <span class="chip"><span class="pip"></span>Express</span>
+          <span class="chip"><span class="pip"></span>PostgreSQL</span>
+          <span class="chip"><span class="pip"></span>React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="tag">Roadmap</span>
+        <h2>Evolução do projeto</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="vtimeline">
+        <div class="vt-item reveal">
+          <div class="vt-marker"><span class="dot"></span></div>
+          <div class="vt-content">
+            <span class="vt-period">Fase 1</span>
+            <h3>Concepção</h3>
+            <p>Definição da filosofia do projeto e do problema a ser resolvido. ✅ Concluída.</p>
+          </div>
+        </div>
+        <div class="vt-item reveal">
+          <div class="vt-marker"><span class="dot"></span></div>
+          <div class="vt-content">
+            <span class="vt-period">Fase 2</span>
+            <h3>Planejamento</h3>
+            <p>Definição da arquitetura, funcionalidades e stack tecnológica. 🚧 Em andamento.</p>
+          </div>
+        </div>
+        <div class="vt-item reveal">
+          <div class="vt-marker"><span class="dot"></span></div>
+          <div class="vt-content">
+            <span class="vt-period">Fase 3</span>
+            <h3>Prototipagem</h3>
+            <p>Primeiras telas e fluxos de uso. Protótipos serão publicados aqui assim que estiverem prontos.</p>
+          </div>
+        </div>
+        <div class="vt-item reveal">
+          <div class="vt-marker"><span class="dot"></span></div>
+          <div class="vt-content">
+            <span class="vt-period">Fase 4</span>
+            <h3>Desenvolvimento</h3>
+            <p>Construção do back-end (API REST) e do front-end em React.</p>
+          </div>
+        </div>
+        <div class="vt-item reveal">
+          <div class="vt-marker"><span class="dot"></span></div>
+          <div class="vt-content">
+            <span class="vt-period">Fase 5</span>
+            <h3>Lançamento</h3>
+            <p>Primeira versão pública do Phoenix, com acompanhamento contínuo de evolução.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">BR<span class="dot">.</span>dev</div>
+        <div class="footer-social">
+          <a href="https://github.com/BrunoLeite456" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.73 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.42.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/bruno-ricardo-95281b270/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="mailto:bruleite.ric@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bruno Ricardo Leite</span>
+        <span>Construído com dedicação · evolução contínua</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
